@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Playpen+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Nova+Square&display=swap');
+
+:root {
+    --green: green;
+    --red: red;
+    --blue: blue;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.3);
+}
+
+* {
+    font-family: 'Playpen', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 63%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo {
+    color: var(--blue);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+header .logo i {
+    color: peru;
+}
+
+header .navbar a {
+    font-size: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    color: var(--red);
+}
+
+header .navbar a:hover {
+    color: #cacaca;
+    background: var(--green);
+}
+
+header .icons a,
+header .icons i {
+    cursor: pointer;
+    margin-left: 1rem;
+    height: 5rem;
+    line-height: 5rem;
+    width: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--green);
+    border-radius: 50%;
+    background-color: #efefef;
+}
+
+header .icons a:hover,
+header .icons i:hover {
+    background-color: orange;
+    color: #efefef;
+}
+
+
+header .icons #menu-bars {
+    display: none;
+}
+
+#search-form {
+    position: fixed;
+    top: -110%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1004;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+#search-form.active {
+    top: 0;
+}
+
+#search-form #search-box {
+    width: 50rem;
+    border-bottom: 0.1rem solid #ffffffff;
+    padding: 1rem 0;
+    color: #ffff;
+    font-size: 3rem;
+    text-transform: none;
+    background: none;
+}
+
+#search-form #search-box::placeholder {
+    color: #eee;
+}
+
+#search-form #search-box::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+#search-form label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+#search-form label:hover {
+    color: var(--green);
+}
+
+#search-form #close {
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+}
+
+
+.home .container .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:3rem;
+    margin-top:7.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.home .container .slide img{
+    width:100%;
+    height:660px;
+}
+
+/*About*/
+.intro .abouthead{
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-family:Vina Sans;
+    letter-spacing: .1rem;
+    padding-bottom:1%;
+    color:darkolivegreen;
+    text-shadow: 1px 1px 1px darkblue;
+}
+
+.intro{
+    background-color: mediumpurple;
+}
+
+/*Denominators*/
+
+.denominators .adds{
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-family:Vina Sans;
+    letter-spacing: .1rem;
+    padding-bottom:1%;
+    color:yellow;
+    text-shadow: 1px 1px 1px darkgreen;
+}
+
+.denominators{
+    width:100%;
+    background:hotpink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+.denominators .dominate{
+    width: 100%;
+    height: 100%;
+}
+
+.dominators .dominate .main{
+    width: 90%;
+    height: 90%;
+    background-color: chartreuse;
+    border-radius: 33px;
+    box-shadow: var(--box-shadow);
+}
+
+.menu .snacks .item .image{
+    margin:1%;
+    border-radius: 33px;
+    margin-left:0;
+}
+
+.denominators .dominate .main .preferences{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.denominators .dominate .main .preferences .small,
+.denominators .dominate .main .preferences .large{
+    border: 2px solid orange;
+    width:30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*Snacks*/
+
+.menu .snackhead{
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-family:Vina Sans;
+    letter-spacing: .1rem;
+    padding-bottom:1%;
+    color:lightcoral;
+    text-shadow: 1px 1px 1px darkgreen;
+}
+
+#snacks{
+    width: 100%;
+    background:palegoldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+.snacks{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+.menu .snacks .item, 
+.denominators .dominate .main{
+    width: 90%;
+    height: 90%;
+    background-color: peachpuff;
+    border-radius: 33px;
+    box-shadow: var(--box-shadow);
+}
+
+.menu .snacks .item .image{
+    margin:1%;
+    border-radius: 33px;
+    margin-left:0;
+}
+
+.menu .snacks .item .price{
+    text-align: center;
+}
+
+/*Veg Pizzas*/
+
+#vegpizza, #nonvegpizza{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:2%;
+}
+
+.menu .veg{
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-family:Vina Sans;
+    letter-spacing: .1rem;
+    padding-bottom:1%;
+    color: magenta;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.menu .veg-pizzas h1{
+    text-align: center;
+    padding:10px;
+    font-size: xx-large;
+}
+
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns:auto auto auto ;
+    gap: 1rem;
+    grid-template-rows: auto auto auto ;
+}
+
+.menu .box-container .box{
+    background: peachpuff;
+    border: .2rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
+    height: 100%;
+    width: auto;
+    border-radius:33px;
+    margin: 2%;
+}
+
+.menu .box-container .box .subheading,
+.menu .snacks .item .subheading,
+.denominators .dominate .main .subheading{
+    text-align: center;
+    font-family:Kdam Thmor Pro;
+    font-size: 1pc;
+    padding: 1%;
+}
+
+.menu .box-container .box .image,
+.menu .snacks .item img,
+.denominators .dominate .main img{
+    height:25rem;
+    width:100%;
+    padding:1.5rem;
+    overflow: hidden;
+    position: relative;
+    border-radius:.5rem ;
+}
+
+.menu .box-container .box .btn, 
+.menu .snacks .item .btn,
+.denominators .dominate .main .btn{
+    background-color: magenta;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    padding:2%;
+    margin: 2%;
+    font-size:large;
+    margin-left: 20%;
+    margin-top:5%;
+    width:50%;
+}
+
+.menu .box-container .box .image img{
+    height:100%;
+    width:100%;
+    border-radius:1rem;
+    object-fit: cover;
+}
+
+.menu .box-container .box .content .preferences{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+    height:100px;
+}
+
+.menu .box-container .box .content p{
+    border:2px solid red;
+    width:100%;
+    height:30%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.menu .box-container .box .content .preferences .regular,
+.menu .box-container .box .content .preferences .medium,
+.menu .box-container .box .content .preferences .large{
+    border:2px solid #39489b;
+    box-shadow: var(--box-shadow);
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    height:100px;
+    padding-bottom:1%;
+    text-align: center;
+    border-radius:.5rem;
+}
+
+
+
+/*Non-Veg Pizzas*/
+.menu .non-veg{
+    display: flex;
+    justify-content: center;
+    font-family: Vina Sans;
+    padding-bottom: 1%;
+    font-size: 5rem;
+    letter-spacing: .1rem;
+    color:var(--blue);
+    text-shadow: 1px 1px 1px darkred;
+}
+
+.menu .box-container .box .image .fa-heart{
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size:2rem;
+    background:#abab;
+    border-radius:50%;
+    color: var(--blue);
+}
+
+.menu .box-container .box .image .fa-heart:hover{
+    background-color: pink;
+}
+
+.menu .box-container .box .content{
+    padding:2rem;
+    padding-top: 0;
+}
+
+.menu .box-container .box .content .stars, 
+.menu .snacks .box-container .box .stars,
+.denominators .dominate .main .stars{
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.menu .box-container .box .content .stars i, 
+.menu .snacks .item .stars i,
+.denominators .dominate .main .stars i{
+    font-size: 2rem;
+    color:magenta;
+}
+
+.menu .box-container .box .content h3,
+.menu .snacks .item h3,
+.denominators .dominate .main h3{
+    color:var(--blue);
+    font-size: 2.5rem;
+    margin: 1%;
+    text-align: center;
+}
+
+.menu .box-container .box .content p,
+.menu .snacks .item span{
+    color:var(--red);
+    font-size:1.5rem;
+    padding:1rem 0;
+    line-height: 2;
+}
+
+.menu .box-container .box .content .preferences .price
+.menu .snacks .item .price,
+.denominators .dominate .main .preferences .price{
+    color: orange;
+    margin:1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+#vegpizza{
+    background-color: mediumvioletred;
+}
+
+#nonvegpizza{
+    background-color: lightgreen;
+}
+
+#snacks{
+    background-color: greenyellow;
+}
+
+.footer{
+    background-color: darkgreen;
+    padding:2rem;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer .box-container .box h3{
+    padding:.5rem 0;
+    font-size: 3rem;
+    color:greenyellow;
+}
+
+.footer .box-container .box a{
+    display: block;
+    padding:.5rem 0;
+    font-size: 2rem;
+    color:violet;
+}
+
+.footer .box-container .box a i{
+    color: gainsboro;
+}
+
+.footer .box-container .box a i:hover{
+    color: pink;
+    cursor: pointer;
+}
+
+.footer .box-container .box a:hover{
+    color: pink;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.credit{
+    text-align: center;
+    font-size:2rem;
+    color:peachpuff;
+    padding:2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.credit span{
+    color:yellowgreen;
+    text-shadow: 1px 1px 1px rgba(110, 224, 10, 0.7);
+    margin: 0;
+}
+
+.order{
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    background-color:maroon;
+}
+
+.order .blink{
+    display: flex;
+    justify-content: center;
+    font-family: Nova Square;
+    padding-bottom: 1%;
+    font-size: 5rem;
+    letter-spacing: .1rem;
+    color:chocolate;
+    text-shadow: 2px 2px 2px yellow;
+}
+
+
+
+@media (max-width:1000px) {
+
+    html {
+        font-size: 60%;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+}
+
+@media(max-width:770px) {
+
+    header .icons #menu-bars {
+        display: inline-block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        border-top: 1rem solid rgba(0, 0, 0, 0.2);
+        border-bottom: 1rem solid rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        display: block;
+        padding: 2rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #88476823;
+    }
+
+    #search-form #search-box {
+        width: 90%;
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width:1000px) {
+
+    html {
+        font-size: 60%;
+    }
+}
